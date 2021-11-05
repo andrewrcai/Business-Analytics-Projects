@@ -1,4 +1,4 @@
-## Query 1 - Top 5 Artists
+``Query 1 - Top 5 Artists
 SELECT a.Name Artist, g.Name Genre, COUNT(*) Quantity
 FROM InvoiceLine il
 JOIN Track t
@@ -44,3 +44,4 @@ JOIN Employee e
 ON e.EmployeeId = c.SupportRepId
 GROUP BY 1,2, 3
 ORDER BY 2, 3;
+``
